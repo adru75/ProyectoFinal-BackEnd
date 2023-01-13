@@ -7,17 +7,17 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class skills {
+public class hys {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nombre;
     private int porcentaje;
 
-    public skills() {
+    public hys() {
     }
 
-    public skills(String nombre, int porcentaje) {
+    public hys(String nombre, int porcentaje) {
         this.nombre = nombre;
         this.porcentaje = porcentaje;
     }
@@ -45,4 +45,5 @@ public class skills {
     public void setPorcentaje(int porcentaje) {
         this.porcentaje = porcentaje;
     }
+    
 }

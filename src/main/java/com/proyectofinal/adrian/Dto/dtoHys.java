@@ -1,19 +1,19 @@
 
-package com.proyectofinal.adrian.Security.Dto;
+package com.proyectofinal.adrian.Dto;
 
 import jakarta.validation.constraints.NotBlank;
 
 
-public class dtoSkills {
+public class dtoHys {
     @NotBlank
     private String nombre;
     @NotBlank
     private int porcentaje;
 
-    public dtoSkills() {
+    public dtoHys() {
     }
 
-    public dtoSkills(String nombre, int porcentaje) {
+    public dtoHys(String nombre, int porcentaje) {
         this.nombre = nombre;
         this.porcentaje = porcentaje;
     }
@@ -33,7 +33,5 @@ public class dtoSkills {
     public void setPorcentaje(int porcentaje) {
         this.porcentaje = porcentaje;
     }
-    
-    
     
 }
